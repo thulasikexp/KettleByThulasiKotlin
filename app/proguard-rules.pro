@@ -19,3 +19,8 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+-keep class com.thulsi.kettlebythulasi.MainActivity { *; }  # Keep your main activity (REPLACE with your actual Activity classes)
+-keep class * extends androidx.** { *; } # AndroidX
+-keep class * implements android.os.Parcelable { *; } # Keep Parcelables
+-keep class * implements java.io.Serializable { *; } # Keep Serializables
